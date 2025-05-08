@@ -41,7 +41,7 @@ pipeline {
                         docker rm -f campaign-demo-server
                     fi
 
-                    docker run -d --name campaign-demo-server --label campaign-demo-server -p 8081:8081 miichellecame/campaign-demo:v1
+                    docker run -d --name campaign-demo-server --label campaign-demo-server -p 5000:5000 miichellecame/campaign-demo:v1
                 '''
             }
         }
