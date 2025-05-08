@@ -32,7 +32,7 @@ pipeline {
         }
         stage('run container') {
             steps {
-                sh 'docker run -d --name campaign-demo-server --label campaign-demo-server -p 8081:8080 miichellecame/campaign-demo:v1'
+                sh 'docker run -d --name campaign-demo-server --label campaign-demo-server -p 8081:8081 miichellecame/campaign-demo:v1'
             }
         }
     }
